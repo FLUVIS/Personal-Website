@@ -1,0 +1,21 @@
+#headBox{
+    list-style-type: none;
+    height: 12vh;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+#logo{
+    height: 10vh;
+    vertical-align: -2vh;
+}
+
+#head{
+    font-size: 9vh;
+}
+
+body{
+}
