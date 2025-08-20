@@ -1,21 +1,37 @@
-#headBox{
-    list-style-type: none;
-    height: 12vh;
+*{
+    margin 0;
+    padding: 0;
+    box-sizing: boarder-box;
 }
 
-nav ul li{
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#mainBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headBox{
     list-style-type: none;
-    display: inline;
+    height: 12vh;
+    display: flex;
+    align-items: center;
 }
 
 #logo{
     height: 10vh;
-    vertical-align: -2vh;
+    margin-right: 20px;
 }
 
 #head{
     font-size: 9vh;
 }
 
-body{
+.icon{
+    height: 6vh;
+    margin: 8px;
 }
