@@ -9,17 +9,36 @@ a{
     text-decoration: none;
 }
 
-#mainBox{
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.headBox{
+#logoBox{
+
+}
+
+#linkBox{
+
+}
+
+#headBox{
     list-style-type: none;
     height: 12vh;
     display: flex;
     align-items: center;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+#navLinks{
+    list-style-type: none;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 
 #logo{
@@ -35,4 +54,12 @@ a{
 .icon{
     height: 6vh;
     margin: 8px;
+}
+
+.ham{
+    display: none;
+}
+
+.bar{
+
 }
