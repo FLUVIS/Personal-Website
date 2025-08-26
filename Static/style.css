@@ -13,6 +13,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
 }
 
 #logoBox{
@@ -62,4 +63,25 @@ a{
 
 .bar{
 
+}
+
+
+
+/* SCROLL BOX STYLING */
+
+#scrollBox{
+    overflow: auto;
+    border: 10px solid black;
+}
+
+.big{
+    font-size: 500px;
+}
+
+
+/* TOOLS */
+
+.sticky{
+    position: sticky;
+    top: 0;
 }
