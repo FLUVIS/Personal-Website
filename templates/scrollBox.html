@@ -1,0 +1,16 @@
+{% extends "home.html" %}
+{% block scrollBox %}
+<div id="scrollBox">
+
+  {% for i in range(0, 13) %}
+  <div class="card">
+    <img class="cardImage" src="/static/Images/CardImages/81/1.jpg" alt="oops">
+    <div class="cardContent">
+      <p class="cardTitle">TITLE: 81</p>
+      <p class="cardPrice">PRICE: {{ i + 1 }}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+{% endblock %}

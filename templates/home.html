@@ -6,37 +6,29 @@
     <title>Home</title>
 </head>
 <body>
-    <div id="header">
-        <nav id="logoBox">
-            <ul id="headBox">
-                <li><img src="/static/Images/Logo Simple.jpg" id="logo" alt="LOGO"></li>
-                <li><span class="head">Compass</span></li>
-                <li><span class="head">Master</span></li>
-            </ul>
-        </nav>
+    <div id="header" class="sticky">
+        <div id="headLeft">
+            <a href="/"><img id="logo" src="/static/Images/Logo Simple.png" alt="Logo?"></a>
+            <span class="title">Compass</span>
+            <span class="title">Master</span>
+        </div>
+        <div id="headRight">
+            <a href="mailto:compassmaster360@gmail.com">
+                <img class="icon" src="/static/Images/Icons/mail.png" alt="e-mail">
+            </a>
+            <a href="https://www.linkedin.com/in/keegan-pullen">
+                <img class="icon" src="/static/Images/Icons/LinkedIn.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/FLUVIS">
+                <img class="icon" src="/static/Images/Icons/GitHub.png" alt="GitHub">
+            </a>
+            <a href="/help">
+                <img class="icon" src="/static/Images/Icons/help.png" alt="help">
+            </a>
+        </div>
+    </div>
+    <div id="ham">
 
-        <nav id="linkBox">
-            <ul id="navLinks">
-                <li><a href="mailto:compassmaster360@gmail.com">
-                    <img class="icon" src="/static/Images/Icons/mail.png" alt="E-MAIL">
-                </a></li>
-                <li><a href="https://www.linkedin.com/in/keegan-pullen">
-                    <img class="icon" src="/static/Images/Icons/LinkedIn.png" alt="LINKEDIN">
-                </a></li>
-                <li><a href="https://github.com/FLUVIS">
-                    <img class="icon" src="/static/Images/Icons/GitHub.png">
-                </a></li>
-                <li><a href="/static/help.html">
-                    <img class="icon" src="/static/Images/Icons/help.png" alt="HELP">
-                </a></li>
-            </ul>
-
-            <div class="ham">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
     </div>
     {% block scrollBox %}
     {% endblock %}

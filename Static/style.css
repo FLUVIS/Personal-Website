@@ -9,57 +9,142 @@ a{
     text-decoration: none;
 }
 
-#header{
+/* HEADER STYLING */
+
+#headLeft{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-#logoBox{
-
-}
-
-#linkBox{
-
-}
-
-#headBox{
-    list-style-type: none;
-    height: 12vh;
+#headRight{
     display: flex;
-    align-items: center;
-    padding-right: 70px;
-    padding-left: 70px;
+    justify-content: flex-end;
 }
 
-#navLinks{
-    list-style-type: none;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    padding-right: 70px;
-    padding-left: 70px;
-}
-
-#logo{
-    height: 10vh;
-    margin-right: 20px;
-}
-
-.head{
-    font-size: 9vh;
-    margin-right: 50px;
-}
-
-.icon{
-    height: 6vh;
-    margin: 8px;
-}
-
-.ham{
+#ham{
     display: none;
 }
 
-.bar{
 
+
+/* CARD STYLING */
+/* main card styling in media */
+
+.cardImage{
+    width: 100%;
+    border-bottom: 0.5vw solid gray;
+}
+
+.cardContent{
+    width: 100%;
+}
+
+.cardTitle{
+    font-size: 3vw;
+    margin: 1vw;
+}
+
+.cardPrice{
+    font-size: 3vw;
+    margin: 1vw;
+}
+
+
+/* TOOLS */
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media(orientation: landscape){
+    .card{
+        border: 0.5vw solid gray;
+        width: 30%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-right: 1%;
+        margin-left: 1%;
+        background-color: white;
+    }
+
+    #scrollBox{
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: black;
+    }
+
+    #logo{
+        height: 9vh;
+        margin-left: 1vw;
+        margin-right: 2vw;
+    }
+
+    .icon{
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+        height: 9vh;
+    }
+
+    .title{
+        font-size: 9vh;
+        margin-top: -2.5vh;
+        margin-right: 2.5vw;
+    }
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+        height: 11vh;
+        background-color: white;
+    }
+}
+
+@media(orientation: portrait){
+    .card{
+        border: 0.5vw solid gray;
+        width: 100%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: white;
+    }
+
+    #scrollBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        background-color: gray;
+    }
+
+    #logo{
+        height: 5vh;
+        margin-left: 1vw;
+        margin-right: 2vw;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .title{
+        font-size: 5vh;
+        margin-top: -1.3vh;
+        margin-right: 1.3vw;
+    }
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+        height: 6vh;
+        background-color: white;
+    }
 }
