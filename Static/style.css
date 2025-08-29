@@ -9,60 +9,43 @@ a{
     text-decoration: none;
 }
 
+/* HEADER STYLING */
 #header{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    height: 11vh;
     background-color: white;
 }
 
-#logoBox{
-
-}
-
-#linkBox{
-
-}
-
-#headBox{
-    list-style-type: none;
-    height: 12vh;
+#headLeft{
     display: flex;
-    align-items: center;
-    padding-right: 70px;
-    padding-left: 70px;
-}
-
-#navLinks{
-    list-style-type: none;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    padding-right: 70px;
-    padding-left: 70px;
+    justify-content: flex-start;
 }
 
 #logo{
-    height: 10vh;
-    margin-right: 20px;
+    height: 9vh;
+    margin-left: 1vw;
+    margin-right: 2vw;
 }
 
-.head{
+#title{
     font-size: 9vh;
-    margin-right: 50px;
+    margin-top: -2.5vh;
+}
+
+#headRight{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .icon{
-    height: 6vh;
-    margin: 8px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    height: 9vh;
 }
 
-.ham{
+#ham{
     display: none;
-}
-
-.bar{
-
 }
 
 
@@ -72,10 +55,36 @@ a{
 #scrollBox{
     overflow: auto;
     border: 10px solid black;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.big{
-    font-size: 500px;
+/* CARD STYLING */
+
+.bufferOuter{
+    display: flex;
+    width: 100%;
+    max-width: 33%;
+    min-width: 613px;
+}
+
+.bufferInner{
+    display: flex;
+    width: 100%;
+    max-width: 33%;
+    min-width: 512px;
+}
+
+.card{
+    border: 4px solid blue;
+    width: 508px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.card-img-top{
+    width: 500px;
+    border: 4px solid black;
 }
 
 
@@ -84,4 +93,16 @@ a{
 .sticky{
     position: sticky;
     top: 0;
+}
+
+.spacer{
+    width: 100%;
+    max-width: 2.6vw;
+    background-color: green;
+}
+
+.spacer1{
+    width: 100%;
+    max-width: 2.6vw;
+    background-color: pink;
 }
