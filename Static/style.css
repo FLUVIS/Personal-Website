@@ -10,38 +10,15 @@ a{
 }
 
 /* HEADER STYLING */
-#header{
-    display: flex;
-    justify-content: space-between;
-    height: 11vh;
-    background-color: white;
-}
 
 #headLeft{
     display: flex;
     justify-content: flex-start;
 }
 
-#logo{
-    height: 9vh;
-    margin-left: 1vw;
-    margin-right: 2vw;
-}
-
-.title{
-    font-size: 9vh;
-    margin-top: -2.5vh;
-}
-
 #headRight{
     display: flex;
     justify-content: flex-end;
-}
-
-.icon{
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-    height: 9vh;
 }
 
 #ham{
@@ -55,7 +32,7 @@ a{
 
 .cardImage{
     width: 100%;
-    border-bottom: 0.5vw solid black;
+    border-bottom: 0.5vw solid gray;
 }
 
 .cardContent{
@@ -84,12 +61,13 @@ a{
 
 @media(orientation: landscape){
     .card{
-        border: 0.5vw solid black;
+        border: 0.5vw solid gray;
         width: 30%;
         margin-top: 1vh;
         margin-bottom: 1vh;
         margin-right: 1%;
         margin-left: 1%;
+        background-color: white;
     }
 
     #scrollBox{
@@ -98,17 +76,44 @@ a{
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
+        background-color: black;
+    }
+
+    #logo{
+        height: 9vh;
+        margin-left: 1vw;
+        margin-right: 2vw;
+    }
+
+    .icon{
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+        height: 9vh;
+    }
+
+    .title{
+        font-size: 9vh;
+        margin-top: -2.5vh;
+        margin-right: 2.5vw;
+    }
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+        height: 11vh;
+        background-color: white;
     }
 }
 
 @media(orientation: portrait){
     .card{
-        border: 0.5vw solid black;
+        border: 0.5vw solid gray;
         width: 100%;
         margin-top: 1vh;
         margin-bottom: 1vh;
         margin-right: auto;
         margin-left: auto;
+        background-color: white;
     }
 
     #scrollBox{
@@ -117,10 +122,29 @@ a{
         justify-content: center;
         width: 100%;
         margin: auto;
+        background-color: gray;
     }
 
-    body{
-        display: grid;
-        justify-content: center;
+    #logo{
+        height: 5vh;
+        margin-left: 1vw;
+        margin-right: 2vw;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .title{
+        font-size: 5vh;
+        margin-top: -1.3vh;
+        margin-right: 1.3vw;
+    }
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+        height: 6vh;
+        background-color: white;
     }
 }
