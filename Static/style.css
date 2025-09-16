@@ -6,14 +6,25 @@ body {
 }
 
 /* HEADER STYLING */
+
+#headerTop{
+    margin: 0;
+    padding: 0;
+    height: 2vh;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0vh;
+}
+
 #headLeft{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #headRight{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 
@@ -108,11 +119,11 @@ body {
 
     #header{
         display: flex;
-        justify-content: space-between;
+        flex-wrap: auto;
         height: 11vh;
         background-color: white;
         position: sticky;
-        top: 0vh;
+        top: 2vh;
     }
 
     #ham{
@@ -161,7 +172,7 @@ body {
         background-color: white;
         padding-top: 2vh;
         position: sticky;
-        top: 0vh;
+        top: 2vh;
         width: 100%;
     }
 
