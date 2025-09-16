@@ -62,9 +62,8 @@ body {
 
 /* TOOLS */
 
-.sticky{
-    position: sticky;
-    top: 0vh;
+.splinter{
+    flex-grow: 1;
 }
 
 /* MEDIA QUERIES */
@@ -84,7 +83,7 @@ body {
         overflow: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100%;
         background-color: black;
     }
@@ -127,8 +126,6 @@ body {
         width: 100%;
         margin-top: 1vh;
         margin-bottom: 1vh;
-        margin-right: auto;
-        margin-left: auto;
         background-color: white;
     }
 
@@ -138,7 +135,6 @@ body {
         justify-content: center;
         align-content: center;
         width: 100%;
-        margin: auto;
         background-color: gray;
     }
 
