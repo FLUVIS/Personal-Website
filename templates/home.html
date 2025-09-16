@@ -6,30 +6,38 @@
     <title>Home</title>
 </head>
 <body>
-    <div id="header" class="sticky">
-        <div id="headLeft">
-            <a href="/"><img id="logo" src="/static/Images/Logo Simple.png" alt="Logo?"></a>
-            <span class="title">Compass</span>
-            <span class="title">Master</span>
+    <script src="/static/hamCode.js"></script>
+        <div id="header">
+            <div id="headLeft">
+                <a href="/"><img id="logo" src="/static/Images/Logo Simple.png" alt="Logo?"></a>
+                <span class="title">Compass</span>
+                <span class="title">Master</span>
+            </div>
+            <div id="headRight">
+                <a href="mailto:compassmaster360@gmail.com">
+                    <img class="icon" src="/static/Images/Icons/mail.png" alt="e-mail">
+                </a>
+                <a href="https://www.linkedin.com/in/keegan-pullen">
+                    <img class="icon" src="/static/Images/Icons/LinkedIn.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/FLUVIS">
+                    <img class="icon" src="/static/Images/Icons/GitHub.png" alt="GitHub">
+                </a>
+                <a href="/help">
+                    <img class="icon" src="/static/Images/Icons/help.png" alt="help">
+                </a>
+            </div>
+            <button id="ham" onclick="openBurger()">
+                <img id="hamImage" src="/static/Images/Icons/Ham.png" alt="HAM">
+            </button>
         </div>
-        <div id="headRight">
-            <a href="mailto:compassmaster360@gmail.com">
-                <img class="icon" src="/static/Images/Icons/mail.png" alt="e-mail">
-            </a>
-            <a href="https://www.linkedin.com/in/keegan-pullen">
-                <img class="icon" src="/static/Images/Icons/LinkedIn.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/FLUVIS">
-                <img class="icon" src="/static/Images/Icons/GitHub.png" alt="GitHub">
-            </a>
-            <a href="/help">
-                <img class="icon" src="/static/Images/Icons/help.png" alt="help">
-            </a>
-        </div>
-    </div>
-    <div id="ham">
+        <ul id="hamList">
+            <li><a class="hamText" href="mailto:compassmaster360@gmail.com">Contact</a></li>
+            <li><a class="hamText" href="https://www.linkedin.com/in/keegan-pullen">LinkedIn</a></li>
+            <li><a class="hamText" href="https://github.com/FLUVIS">GitHub</a></li>
+            <li><a class="hamText" href="/help">Help</a></li>
+        </ul>
 
-    </div>
     {% block scrollBox %}
     {% endblock %}
 
