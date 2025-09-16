@@ -1,13 +1,12 @@
 {% extends "home.html" %}
 {% block scrollBox %}
 <div id="scrollBox">
-
-  {% for i in range(0, 13) %}
+  {% for a in art %}
   <div class="card">
-    <img class="cardImage" src="/static/Images/CardImages/81/1.jpg" alt="oops">
+    <img class="cardImage" src="/static/Images/CardImages/{{ a[0] }}/1.jpg" alt="oops">
     <div class="cardContent">
-      <p class="cardTitle">TITLE: 81</p>
-      <p class="cardPrice">PRICE: {{ i + 1 }}</p>
+      <p class="cardTitle">{{ a[0] }}</p>
+      <p class="cardPrice">${{ a[1] }}-${{ a[2] }}</p>
     </div>
   </div>
   {% endfor %}
