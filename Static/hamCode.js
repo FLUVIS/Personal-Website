@@ -5,12 +5,12 @@ function openBurger(){
     var hamList = document.getElementById('hamList');
     if(menuOpen == false){
         hamImage.src = '/static/Images/Icons/X.png';
-        hamList.style.visibility = 'visible';
+        hamList.style.display = 'inline-block';
         menuOpen = true;
     }
     else{
         hamImage.src = '/static/Images/Icons/Ham.png';
-        hamList.style.visibility = 'hidden';
+        hamList.style.display = 'none';
         menuOpen = false;
     }
 }
