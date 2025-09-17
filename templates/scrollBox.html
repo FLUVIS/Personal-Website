@@ -1,17 +1,20 @@
 {% extends "home.html" %}
 {% block scrollBox %}
-<script src="/static/cardCode.js"></script>
+<div class="shoppingWindow" id="shopWindow">
+  <img src="/static/Images/CardImages/81/1.jpg" alt="...oops..." id="shopImg">
+  <span id="close">X</span>
+</div>
+
 <div id="scrollBox">
   {% for a in art %}
   <div class="card">
     <img class="cardImage" src="/static/Images/CardImages/{{ a[0] }}/1.jpg" alt="oops">
-    <div class="cardContent">
-      <p class="cardTitle">{{ a[0] }}</p>
-      <p class="cardPrice">${{ a[1] }}-${{ a[2] }}</p>
-    </div>
+    <p class="cardTitle">{{ a[0] }}</p>
+    <p class="cardPrice">${{ a[1] }}-${{ a[2] }}</p>
   </div>
   {% endfor %}
   <div class="splinter"></div>
 
 </div>
+<script src="/static/cardCode.js"></script>
 {% endblock %}

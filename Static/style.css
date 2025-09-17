@@ -62,18 +62,43 @@ body {
     border-bottom: 0.5vw solid gray;
 }
 
-.cardContent{
-    width: 100%;
-}
-
 .cardTitle{
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin: 1vw;
 }
 
 .cardPrice{
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin: 1vw;
+}
+
+/* SHOPPING WINDOW STYLING */
+
+.shoppingWindow{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.shoppingWindow img{
+    width: 90%;
+    max-width: 40vw;
+}
+
+.shoppingWindow span{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 3vw;
+    color: #fff;
+    cursor: pointer;
 }
 
 
