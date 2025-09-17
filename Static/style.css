@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -15,6 +20,7 @@ body {
     background-color: white;
     position: sticky;
     top: 0vh;
+    z-index: 999;
 }
 
 #headLeft{
@@ -90,13 +96,18 @@ body {
         background-color: white;
     }
 
+    .card:hover{
+        transform: scale(0.95);
+        box-shadow: 0 2vw 2vh rgba(68, 77, 136, 0.2);
+    }
+
     #scrollBox{
         overflow: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        background-color: black;
+        background-color: white;
     }
 
     #logo{
@@ -124,6 +135,7 @@ body {
         background-color: white;
         position: sticky;
         top: 2vh;
+        z-index: 999;
     }
 
     #ham{
@@ -173,6 +185,7 @@ body {
         position: sticky;
         top: 2vh;
         width: 100%;
+        z-index: 999;
     }
 
     #ham{
