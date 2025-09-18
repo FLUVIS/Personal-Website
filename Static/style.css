@@ -93,7 +93,7 @@ body {
     margin: 0 auto;
 }
 
-#close{
+.close{
     position: absolute;
     top: 3%;
     right: 3%;
@@ -122,6 +122,26 @@ body {
     padding-bottom: 3vh;
     padding-top: 3vh;
     max-width: 60vw;
+}
+
+/* POP WINDOW STYLING */
+
+#popWindow{
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    display: none;
+    margin: auto;
+}
+
+#popImage{
+    height: 90vh;
 }
 
 

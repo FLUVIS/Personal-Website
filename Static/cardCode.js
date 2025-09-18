@@ -1,6 +1,9 @@
 let cards = document.querySelectorAll("div.card");
 let shopWindow = document.getElementById("shopWindow");
+let popWindow = document.getElementById("popWindow");
 let close = document.querySelector('span#close');
+let closePop = document.querySelector('span#closePop');
+let popImg = document.getElementById("popImg");
 let carouselInner = document.getElementById('cInner');
 let art = [['81', 50, 100, 4],['Beautiful Mistakes', 50, 100, 4],['Claw', 50, 100, 4],['Containment', 50, 100, 4],
            ['Convergence', 50, 100, 4],['Crossroads', 50, 100, 4],['Deception', 50, 100, 4],['Discovery', 50, 100, 4],
@@ -14,9 +17,7 @@ let art = [['81', 50, 100, 4],['Beautiful Mistakes', 50, 100, 4],['Claw', 50, 10
 cards.forEach((div, index) => {
     div.addEventListener('click', () => {
         name = art[index][0];
-        console.log(name);
         numPics = art[index].at(-1);
-        console.log(numPics);
         addSlides(name, numPics);
         shopWindow.style.display = "inline";
     })
@@ -25,6 +26,10 @@ cards.forEach((div, index) => {
 close.addEventListener('click', () => {
     shopWindow.style.display = "none";
     clearSlides();
+})
+
+closePop.addEventListener('click', () => {
+    popWindow.style.display = "none";
 })
 
 function clearSlides(){
@@ -42,6 +47,13 @@ function addSlides(name, numPics){
             newItem.classList.add('active');
         }
         newItem.innerHTML = '<img src="/static/Images/CardImages/' + name + '/' + i + '.jpg" class="d-block w-100 shopImg">';
+        newItem.addEventListener('click', () => {
+            img = document.querySelector('div#myCarousel div.active img.shopImg');
+            link = img.src;
+            popImg.src = link;
+            console.log(link);
+            popWindow.style.display = "inline";
+        })
         carouselInner.appendChild(newItem);
     }
 }
