@@ -81,24 +81,47 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    display: inline;
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
-.shoppingWindow img{
-    width: 90%;
-    max-width: 40vw;
+.shopImg{
+    width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
-.shoppingWindow span{
+#close{
     position: absolute;
     top: 3%;
     right: 3%;
     font-size: 3vw;
     color: #fff;
     cursor: pointer;
+}
+
+/* CAROUSEL STYLING */
+
+#myCarousel {
+  max-width: 60vw;
+  height: 100vh;
+  margin-top: 2.5vh;
+  margin-bottom: auto;
+
+}
+
+.carousel-item{
+    height: 95vh;
+    background: #777;
+    color: white;
+}
+
+.container{
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    max-width: 60vw;
 }
 
 

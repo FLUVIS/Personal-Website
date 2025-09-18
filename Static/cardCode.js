@@ -1,6 +1,7 @@
+let maxImgNum = 4; //This is the maximum number of images allowed in the rotation
 let cards = document.querySelectorAll("div.card");
 let shopWindow = document.getElementById("shopWindow");
-let shopImg = document.getElementById("shopImg");
+let shopImg1 = document.getElementById("shopImg1");
 let close = document.querySelector('span#close');
 let art = [['81', 50, 100, 4],['Beautiful Mistakes', 50, 100, 4],['Claw', 50, 100, 4],['Containment', 50, 100, 4],
            ['Convergence', 50, 100, 4],['Crossroads', 50, 100, 4],['Deception', 50, 100, 4],['Discovery', 50, 100, 4],
@@ -14,7 +15,7 @@ let art = [['81', 50, 100, 4],['Beautiful Mistakes', 50, 100, 4],['Claw', 50, 10
 cards.forEach((div, index) => {
     div.addEventListener('click', () => {
         name = art[index][0];
-        console.log(name);
+
         link = "/static/Images/CardImages/" + name + "/1.jpg";
         openModel(link);
     })

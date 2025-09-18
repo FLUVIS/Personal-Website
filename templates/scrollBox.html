@@ -1,8 +1,41 @@
 {% extends "home.html" %}
 {% block scrollBox %}
 <div class="shoppingWindow" id="shopWindow">
-  <img src="/static/Images/CardImages/81/1.jpg" alt="...oops..." id="shopImg">
-  <span id="close">X</span>
+    <div id="myCarousel" class="carousel slide" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img src="/static/Images/CardImages/81/1.jpg" id="shopImg1" class="d-block w-100 shopImg">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="/static/Images/CardImages/81/2.jpg" id="shopImg2" class="d-block w-100 shopImg">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="/static/Images/CardImages/81/3.jpg" id="shopImg3" class="d-block w-100 shopImg">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="/static/Images/CardImages/81/4.jpg" id="shopImg4" class="d-block w-100 shopImg">
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <span id="close">X</span>
 </div>
 
 <div id="scrollBox">
@@ -16,5 +49,6 @@
   <div class="splinter"></div>
 
 </div>
-<script src="/static/cardCode.js"></script>
+<!-- <script src="/static/cardCode.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 {% endblock %}
